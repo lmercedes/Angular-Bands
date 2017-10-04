@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Meta, Title} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-bar',
@@ -7,7 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BarComponent implements OnInit {
 
-  constructor() { }
+  constructor(meta: Meta, title: Title) {
+    
+        title.setTitle('Angular Rocks');
+    
+        meta.addTags([
+          { name: 'description', content: 'Esto es la descripción por defecto' },
+          { name: 'keywords', content: 'Angular Rocks default'}
+        ]);
+    
+      }
 
   ngOnInit() {
   }

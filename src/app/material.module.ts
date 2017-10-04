@@ -18,7 +18,8 @@ import {
     MdIconModule,
     MdCardModule,
     MdGridListModule,
-    MdListModule
+    MdListModule,
+    MdCardModule
   ],
   exports: [
     MdButtonModule,
@@ -27,7 +28,8 @@ import {
     MdIconModule,
     MdCardModule,
     MdGridListModule,
-    MdListModule
+    MdListModule,
+    MdCardModule
   ]
 })
 export class MaterialModule {}

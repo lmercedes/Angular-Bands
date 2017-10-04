@@ -1,22 +1,22 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { RollingStoneComponent } from './rolling-stone.component';
 import { MaterialModule } from '../material.module';
 
-describe('RollingStoneComponent', () => {
-  let component: RollingStoneComponent;
-  let fixture: ComponentFixture<RollingStoneComponent>;
+import { QueenComponent } from './queen.component';
+
+describe('QueenComponent', () => {
+  let component: QueenComponent;
+  let fixture: ComponentFixture<QueenComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports : [MaterialModule],
-      declarations: [ RollingStoneComponent ]
+      imports: [MaterialModule],
+      declarations: [ QueenComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RollingStoneComponent);
+    fixture = TestBed.createComponent(QueenComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

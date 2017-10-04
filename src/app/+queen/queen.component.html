@@ -1,0 +1,43 @@
+<md-card class="band-card">
+  <md-card-header>
+    <div md-card-avatar class="example-header-image"></div>
+    <md-card-title>Queen</md-card-title>
+  </md-card-header>
+  <md-card-content>
+    <div>
+      <img md-card-image src='../../assets/queen.jpg' alt="beatles">
+    </div>
+    <p>
+      Queen es una banda británica de rock formada en 1970 en Londres por el cantante Freddie Mercury, el guitarrista Brian May,
+      el baterista Roger Taylor y el bajista John Deacon. Si bien el grupo ha presentado bajas de dos de sus miembros (Mercury,
+      fallecido en 1991, y Deacon, retirado en 1997), los integrantes restantes, May y Taylor, continúan trabajando bajo
+      el nombre Queen, por lo que la banda aún es considerada activa.4​
+
+    </p>
+    <p>
+      El grupo gozó de un gran éxito en el Reino Unido con álbumes como Sheer Heart Attack (1974) y A Night at the Opera (1975).
+      Este último llamó la atención internacionalmente, n especial por el sencillo "Bohemian Rhapsody", y colocó a Queen
+      en un primer plano d e la escena musical. Tuvieron una significativa repercusión en Estados Unidos a finales de los
+      años 1970, ya con un numeroso repertorio de éxitos.5​ A nivel artístico, se ha destacado su diversidad musical, sus
+      arreglos en múltiples capas y sus armonías vocales. Es considerada una banda de gran influencia en el desarrollo del
+      hard rock y el heavy metal, incorporando elementos del glam rock, rock progresivo, folk, blues y pop. Fue una de las
+      primeras agrupaciones musicales en hacer de sus conciertos espectáculos muy vistosos mediante el uso bombas de humo,
+      flashpots o innovadores sistemas de luces móviles, además de promover la participación del público en los mismos, contribuyendo
+      así al auge del arena rock.6​ La crítica ha señalado el carisma de Freddie Mercury como una parte fundamental de sus
+      presentaciones.7​ A este respecto, habitualmente se han reconocido actuaciones como las del Live Aid en 1985 o el concierto
+      del estadio de Wembley en 1986 como dos de los mejores recitales de rock de la historia.8​9​10​ Aunque el cuarteto
+      normalmente gozó de una gran popularidad y éxito comercial, en su momento una parte de la crítica no les tomó en serio,
+      como por ejemplo cuando en la publicación Rolling Stone se criticó el álbum Jazz llamándolo "fascista".5​
+
+    </p>
+    <div *ngFor='let video of videoList'>
+      <span>{{video.name}}</span>
+      <div>
+        <iframe width="560" height="315" [src]="getEmbedURL(video)" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </md-card-content>
+  <md-card-actions>
+    <button md-button>LIKE</button>
+  </md-card-actions>
+</md-card>
