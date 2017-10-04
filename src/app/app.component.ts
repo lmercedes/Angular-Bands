@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
+
+import { MaterialModule } from './material.module'
 
 @Component({
   selector: 'app-root',
@@ -6,5 +10,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
-}
+  public title = 'Music Bands';}
